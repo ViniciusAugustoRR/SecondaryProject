@@ -10,9 +10,8 @@ using static SP.Identity.API.Models.UserViewModels;
 
 namespace SP.Identity.API.Controllers
 {
-    [ApiController]
     [Route("api/identidade")]
-    public class AuthController : Controller
+    public class AuthController : BaseController
     {
 
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -31,7 +30,7 @@ namespace SP.Identity.API.Controllers
         [HttpPost("registrar")]
         public async Task<ActionResult> Registrar(UsuarioRegistro usuarioRegistro)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var user = new IdentityUser
             {
@@ -44,17 +43,21 @@ namespace SP.Identity.API.Controllers
 
             if (result.Succeeded)
             {
-                return Ok();
+                return CustomResponse();
             }
 
+            foreach(var error in result.Errors)
+            {
+                AddToErrorList(error.Description);
+            }
 
-            return BadRequest();
+            return CustomResponse();
         }
 
         [HttpPost("autenticar")]
         public async Task<ActionResult> Login(UsuarioLogin usuarioLogin)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var result = await _signInManager.PasswordSignInAsync(usuarioLogin.Email, usuarioLogin.Senha,
                 false, true);
@@ -64,14 +67,20 @@ namespace SP.Identity.API.Controllers
                 return Ok(await GerarJwt(usuarioLogin.Email));
             }
 
-            return BadRequest();
+            if (result.IsLockedOut)
+            {
+                AddToErrorList("Usuário fez muitas tentativas falhas de login em pouco tempo, tente novamente mais tarde!");
+                return CustomResponse();
+            }
+
+            AddToErrorList("Usuário ou Senha Incorretos!");
+            return CustomResponse();
         }
 
         [HttpPost]
         public async Task<UsuarioRespostaLogin> GerarJwt(string email)
         {
             var user = await _userManager.FindByEmailAsync(email);
-
             var claims = await _userManager.GetClaimsAsync(user);
             var userRoles = await _userManager.GetRolesAsync(user);
 
@@ -86,6 +95,7 @@ namespace SP.Identity.API.Controllers
             {
                 claims.Add(new Claim("role", role));
             }
+
 
             var identityClaims = new ClaimsIdentity();
             identityClaims.AddClaims(claims);
@@ -103,7 +113,6 @@ namespace SP.Identity.API.Controllers
             });
 
             var encoded = tokenHandler.WriteToken(token);
-
             var Response = new UsuarioRespostaLogin
             {
                 AccessToken = encoded,
