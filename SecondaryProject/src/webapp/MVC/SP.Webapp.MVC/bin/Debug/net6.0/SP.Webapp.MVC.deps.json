@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SP.Webapp.MVC/1.0.0": {
+        "runtime": {
+          "SP.Webapp.MVC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SP.Webapp.MVC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

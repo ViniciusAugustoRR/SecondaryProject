@@ -6,7 +6,6 @@ namespace SP.Identity.API.Controllers
     [ApiController]
     public class BaseController : Controller
     {
-
         protected ICollection<string> Errors = new List<string>();
 
         protected ActionResult CustomResponse(object result = null)
@@ -21,7 +20,6 @@ namespace SP.Identity.API.Controllers
                 {"Mensagens", Errors.ToArray() }
             }));
         }
-
         protected ActionResult CustomResponse(ModelStateDictionary modelState)
         {
             var errors = modelState.Values.SelectMany(e => e.Errors);
@@ -39,17 +37,14 @@ namespace SP.Identity.API.Controllers
         {
             return !Errors.Any();
         }
-
         protected void AddToErrorList(string error)
         {
             Errors.Add(error);
         }
-
         protected void CleanErrorList()
         {
             Errors.Clear();
         }
-
 
     }
 }
