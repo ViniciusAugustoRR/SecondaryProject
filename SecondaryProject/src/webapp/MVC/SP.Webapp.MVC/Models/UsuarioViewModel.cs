@@ -29,7 +29,7 @@ namespace SP.Webapp.MVC.Models
         public string Senha { get; set; }
     }
 
-    public class UsuarioRespostaLogin
+    public class UsuarioResponseLogin
     {
         public string AccessToken { get; set; }
         public double ExpiresIn { get; set; }

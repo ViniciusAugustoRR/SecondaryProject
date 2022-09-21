@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "ObzaQSQJYVWRgWCJ3t+3vaaxYwblGDphrUp76CsiP6t1WpGj5A6MPHNsAergKJJ4jnJGfAyqYrGP3gMDwfjNPw==",
+  "dgSpecHash": "5r9f8AGvM1AEn8fJsjEWWK1FkJcWMQP6qUcu5WX5MeHlOAoQvFGLEmKvGD5r5ujsdN9ZBapPOXC+D1PmesvL9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\augusto\\Desktop\\PJ\\SecondaryProject\\SecondaryProject\\src\\building blocks\\SP.Core\\SP.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\augusto\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\augusto\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\augusto\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\augusto\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\augusto\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\augusto\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\augusto\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\augusto\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

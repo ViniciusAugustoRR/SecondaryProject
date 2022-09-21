@@ -9,9 +9,10 @@
     <div class="col-md-12">
         <section>
             <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
-                <h4>Seja bem vindo e boas compras</h4>
+                <h4>Seja bem vindo e boas compras (GIVE ME MONEY)</h4>
                 <hr />
 
+                <vc:summary></vc:summary>
 
                 <div class="form-group">
                     <label asp-for="Email"></label>
@@ -23,6 +24,7 @@
                     <input type="password" asp-for="Senha" class="form-control" />
                     <span asp-validation-for="Senha" class="text-danger"></span>
                 </div>
+                <br />
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Entrar</button>
                 </div>

@@ -4,7 +4,7 @@ using System.Text.Json;
 
 namespace SP.Webapp.MVC.Services
 {
-    public class Service
+    public abstract class Service
     {
         protected StringContent ObterConteudo(object dado)
         {

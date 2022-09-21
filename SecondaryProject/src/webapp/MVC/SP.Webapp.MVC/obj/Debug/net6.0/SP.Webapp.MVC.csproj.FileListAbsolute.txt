@@ -24,3 +24,11 @@ C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.
 C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\obj\Debug\net6.0\SP.Webapp.MVC.pdb
 C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\obj\Debug\net6.0\SP.Webapp.MVC.genruntimeconfig.cache
 C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\obj\Debug\net6.0\ref\SP.Webapp.MVC.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\webapp\MVC\SP.Webapp.MVC\obj\Debug\net6.0\SP.Webapp.MVC.csproj.CopyComplete
