@@ -18,6 +18,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.16.1",
+          "SP.WebApi.Core": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.Reflection": "4.3.0"
         },
@@ -631,6 +632,14 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "SP.WebApi.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.9"
+        },
+        "runtime": {
+          "SP.WebApi.Core.dll": {}
+        }
       }
     }
   },
@@ -1101,6 +1110,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "SP.WebApi.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

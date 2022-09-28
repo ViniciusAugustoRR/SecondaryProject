@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using SP.Identity.API.Extensions;
+using SP.WebApi.Core.Identidade;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;

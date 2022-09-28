@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SP.Identity.API.DataBase;
-using SP.Identity.API.Extensions;
+using SP.WebApi.Core.Identidade;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,7 +32,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddDefaultTokenProviders();
 
 
-
+builder.Services.AddJwtConfiguration(builder.Configuration);
+/**
 var appSection = builder.Configuration.GetSection("AppSettings");
 builder.Services.Configure<AppSettings>(appSection);
 
@@ -52,13 +53,14 @@ builder.Services.AddAuthentication(options =>
     {
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
-        
+
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidAudience = appSettings.ValidoEm,
         ValidIssuer = appSettings.Emissor
     };
-});
+}); 
+**/
 
 
 var app = builder.Build();
@@ -74,8 +76,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-app.UseAuthentication();
+//app.UseAuthorization();
+//app.UseAuthentication();
+app.UseAuthConfiguration();
 
 app.MapControllers();
 

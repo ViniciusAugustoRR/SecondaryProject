@@ -32,6 +32,11 @@
 
   <ItemGroup>
     <Folder Include="Configurations\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\building blocks\Services\SP.WebApi.Core\SP.WebApi.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

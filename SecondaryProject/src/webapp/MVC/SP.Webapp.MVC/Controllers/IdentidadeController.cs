@@ -32,7 +32,7 @@ namespace SP.Webapp.MVC.Controllers
             if (!ModelState.IsValid) return View(UR);
 
             var Response = await _authenticationService.Registro(UR);
-
+             
             if (ResponseHasErrors(Response.ResponseResult)) return View(UR);
             
             await RealizarLogin(Response);
@@ -65,7 +65,6 @@ namespace SP.Webapp.MVC.Controllers
 
             return LocalRedirect(returnUrl);
         }
-
 
         [HttpGet]
         [Route("Logout")]

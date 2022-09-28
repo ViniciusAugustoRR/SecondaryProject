@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
-using SP.Webapp.MVC.Extension;
+using SP.Webapp.MVC.Extensions;
 using SP.Webapp.MVC.Models;
 
 namespace SP.Webapp.MVC.Services

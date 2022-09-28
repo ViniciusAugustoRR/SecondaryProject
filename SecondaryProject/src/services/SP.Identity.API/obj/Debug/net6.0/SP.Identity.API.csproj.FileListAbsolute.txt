@@ -70,3 +70,5 @@ C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\services\SP.Id
 C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\services\SP.Identity.API\obj\Debug\net6.0\SP.Identity.API.pdb
 C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\services\SP.Identity.API\obj\Debug\net6.0\SP.Identity.API.genruntimeconfig.cache
 C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\services\SP.Identity.API\obj\Debug\net6.0\ref\SP.Identity.API.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\services\SP.Identity.API\bin\Debug\net6.0\SP.WebApi.Core.dll
+C:\Users\augusto\Desktop\PJ\SecondaryProject\SecondaryProject\src\services\SP.Identity.API\bin\Debug\net6.0\SP.WebApi.Core.pdb

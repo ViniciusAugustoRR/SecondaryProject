@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.Extensions.Hosting.Internal;
 using SP.Webapp.MVC.Configurations;
-using SP.Webapp.MVC.Extension;
+using SP.Webapp.MVC.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

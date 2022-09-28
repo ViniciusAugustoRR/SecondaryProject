@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "02ATiwnvPG28uRmjcB+XecAM+aO5H85p4M9qYLVIjAo=",
+  "Source": "SP.Catalog.API",
+  "BasePath": "_content/SP.Catalog.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

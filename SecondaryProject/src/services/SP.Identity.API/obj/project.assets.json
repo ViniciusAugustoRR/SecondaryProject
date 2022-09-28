@@ -1135,6 +1135,19 @@
             "rid": "win"
           }
         }
+      },
+      "SP.WebApi.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.9"
+        },
+        "compile": {
+          "bin/placeholder/SP.WebApi.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SP.WebApi.Core.dll": {}
+        }
       }
     }
   },
@@ -3509,6 +3522,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SP.WebApi.Core/1.0.0": {
+      "type": "project",
+      "path": "../../building blocks/Services/SP.WebApi.Core/SP.WebApi.Core.csproj",
+      "msbuildProject": "../../building blocks/Services/SP.WebApi.Core/SP.WebApi.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3523,6 +3541,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.16.1",
+      "SP.WebApi.Core >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "System.Reflection >= 4.3.0"
     ]
@@ -3559,7 +3578,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\augusto\\Desktop\\PJ\\SecondaryProject\\SecondaryProject\\src\\building blocks\\Services\\SP.WebApi.Core\\SP.WebApi.Core.csproj": {
+              "projectPath": "C:\\Users\\augusto\\Desktop\\PJ\\SecondaryProject\\SecondaryProject\\src\\building blocks\\Services\\SP.WebApi.Core\\SP.WebApi.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
